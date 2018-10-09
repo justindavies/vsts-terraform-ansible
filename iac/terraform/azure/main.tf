@@ -146,11 +146,11 @@ resource "azurerm_virtual_machine" "vm" {
     version   = "latest"
   }
 
-  # os_profile {
-  #   computer_name  = "myvm"
-  #   admin_username = "azureuser"
-  #   admin_password = "Passwword1234"
-  # }
+  os_profile {
+    computer_name  = "myvm"
+    admin_username = "azureuser"
+    admin_password = "Passwword1234"
+  }
 
   os_profile_linux_config {
     disable_password_authentication = true
