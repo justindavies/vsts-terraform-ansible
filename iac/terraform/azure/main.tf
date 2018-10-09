@@ -157,7 +157,7 @@ resource "azurerm_virtual_machine" "vm" {
 
     ssh_keys {
       path     = "/home/azureuser/.ssh/authorized_keys"
-      key_data = "${var.ssh_key}"
+      key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOH1O1am27FlE7HE4MsBJygG01yM3H8ecNWYQXrEMVqyQ7dWzEtBuhCdDyPR437Cd0SAxzw96bUglCyqB6HrcSr2iwwI8u/kkW0Ulxxa2SZKvf4fe3ZMDCYmecz/3q8nrcARNVhg/epQGP2HTvZU1EgJvLU1u8fWWBy+ZCrrXu4hb/4R5fL/G0RQn3midHEP6ll2FCyY1SDLwG8pwfluSZ4OpmT7CmvL7K4y+Po9V4eEqbG4RQM4bzldGto1dDur49NYyWtycdFwi9pUNPR8oZYNhw4GcP8jM0opno0jl8tN0GxLG3jv5Y7XmJExdXDMT9a3VDjko4ena0dNBWyggn juda@msft"
     }
   }
 
