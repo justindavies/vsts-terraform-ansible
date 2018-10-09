@@ -13,7 +13,7 @@ resource "azurerm_resource_group" "rg" {
   location = "eastus"
 
   tags {
-    environment = "Terraform Demo"
+    environment = "Developer"
   }
 }
 
@@ -146,11 +146,11 @@ resource "azurerm_virtual_machine" "vm" {
     version   = "latest"
   }
 
-  os_profile {
-    computer_name  = "myvm"
-    admin_username = "azureuser"
-    admin_password = "Passwword1234"
-  }
+  # os_profile {
+  #   computer_name  = "myvm"
+  #   admin_username = "azureuser"
+  #   admin_password = "Passwword1234"
+  # }
 
   os_profile_linux_config {
     disable_password_authentication = true
@@ -162,7 +162,7 @@ resource "azurerm_virtual_machine" "vm" {
   }
 
   tags {
-    environment = "Terraform Demo"
+    environment = "Developer"
   }
 }
 
