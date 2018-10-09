@@ -1,4 +1,4 @@
-storage_account_name = "vstsbuildterraform"
+storage_account_name = "judavstsbuildterraform"
 
 container_name = "terraform-state"
 
